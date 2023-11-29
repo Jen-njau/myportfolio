@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="shortcut icon" type="image/icon" href="{% static 'logo/cover-page.jpg' %}"/>
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&amp;subset=devanagari,latin-ext" rel="stylesheet">
+
+
+    <meta charset="UTF-8">
+    <title>layout</title>
+
+    <div class="container-fluid" >
+        <button type="button" class="btn btn-info"><a href="{% url 'homepage' %}">HOMEPAGE</a></button>
+    </div>
+</head>
+<body>
+{% block body %}
+
+{% endblock %}
+
+
+</body>
+</html>
