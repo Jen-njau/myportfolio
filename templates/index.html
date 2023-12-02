@@ -19,37 +19,6 @@
         <title>MyPortfolio</title>
 
         <!--font-awesome.min.css-->
-        <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
-
-		<!--flat icon css-->
-		<link rel="stylesheet" href="{% static 'css/flaticon.css' %}">
-
-		<!--animate.css-->
-        <link rel="stylesheet" href="{% static 'css/animate.css' %}">
-
-        <!--owl.carousel.css-->
-        <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
-		<link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}">
-		
-        <!--bootstrap.min.css-->
-        <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
-		
-		<!-- bootsnav -->
-		<link rel="stylesheet" href="{% static 'css/bootsnav.css' %}" >
-        
-        <!--style.css-->
-        <link rel="stylesheet" href="{% static 'css/style.css' %}">
-        
-        <!--responsive.css-->
-        <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
-        
-        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-		
-        <!--[if lt IE 9]>
-			<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-        <![endif]-->
 
     </head>
 	
@@ -64,15 +33,10 @@
 				<!-- Start Navigation -->
 			    <nav class="navbar navbar-default bootsnav navbar-fixed dark no-background">
 
-			        <div class="container">
+			        <div class="container" >
 
 			            <!-- Start Header Navigation -->
-			            <div class="navbar-header">
-			                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
-			                    <i class="fa fa-bars"></i>
-			                </button>
-			                <a class="navbar-brand" href="index.html">contactform</a>
-			            </div><!--/.navbar-header-->
+			            <!--/.navbar-header-->
 			            <!-- End Header Navigation -->
 
 			            <!-- Collect the nav links, forms, and other content for toggling -->
@@ -99,13 +63,13 @@
 		<!-- top-area End -->
 	
 		<!--welcome-hero start -->
-		<section id="welcome-hero" class="welcome-hero">
-			<div class="container">
+		<section id="welcome-hero"  style="background-repeat:no-repeat;background-size:100%;background-image: url('{% static 'logo/cover-page.jpg' %}');background-size: cover; height:890px;;align-items: centerposition:absolute;">
+			<div class="container" >
 				<div class="row">
 					<div class="col-md-12 text-center">
 						<div class="header-text">
-							<h2>hi <span>,</span> This <br> Is<br> MyPortfolio <span>.</span>   </h2>
-							<p> web developer</p>
+							<<h2>hi <span>,</span> This is <br> MY<br> Portfolio </h2>
+
 							<a href="{% static 'download/myportolio.txt' %}" download>download resume</a>
 						</div><!--/.header-text-->
 					</div><!--/.col-->
@@ -410,7 +374,7 @@
 											<div class="col-md-5">
 												<div class="experience-time text-right">
 													<h2>2018 - Present</h2>
-													<h3>creative director</h3>
+													<h3>economist</h3>
 												</div><!--/.experience-time-->
 											</div><!--/.col-->
 											<div class="col-md-offset-1 col-md-5">
@@ -418,9 +382,9 @@
 													<div class="timeline-content">
 														<h4 class="title">
 															<span><i class="fa fa-circle" aria-hidden="true"></i></span>
-															hoplony tech limited
+															UON
 														</h4>
-														<h5>newyork, USA</h5>
+														<h5>kenya</h5>
 														<p class="description">
 															Duis aute irure dolor in reprehenderit in vol patate velit esse cillum dolore eu fugiat nulla pari. Excepteur sint occana inna tecat cupidatat non proident. 
 														</p>
@@ -440,16 +404,16 @@
 														<span><i class="fa fa-circle" aria-hidden="true"></i></span>
 														2016 - 2018
 													</h2>
-													<h3>associate design director</h3>
+													<h3>stastician</h3>
 												</div><!--/.experience-time-->
 											</div><!--/.col-->
 											<div class="col-md-5">
 												<div class="timeline">
 													<div class="timeline-content text-right">
 														<h4 class="title">
-															hoplony tech limited
+															KU
 														</h4>
-														<h5>newyork, USA</h5>
+														<h5>UGanda</h5>
 														<p class="description">
 															Duis aute irure dolor in reprehenderit in vol patate velit esse cillum dolore eu fugiat nulla pari. Excepteur sint occana inna tecat cupidatat non proident. 
 														</p>
@@ -462,7 +426,7 @@
 														<span><i class="fa fa-circle" aria-hidden="true"></i></span>
 														2016 - 2018
 													</h2>
-													<h3>associate design director</h3>
+													<h3>developer</h3>
 												</div><!--/.experience-time-->
 											</div><!--/.col-->
 										</div>
@@ -483,9 +447,9 @@
 													<div class="timeline-content">
 														<h4 class="title">
 															<span><i class="fa fa-circle" aria-hidden="true"></i></span>
-															hoplony tech limited
+															fedha limited
 														</h4>
-														<h5>newyork, USA</h5>
+														<h5>uganda</h5>
 														<p class="description">
 															Duis aute irure dolor in reprehenderit in vol patate velit esse cillum dolore eu fugiat nulla pari. Excepteur sint occana inna tecat cupidatat non proident. 
 														</p>
@@ -831,47 +795,6 @@
 					<div class="row">
 						<div class="col-md-offset-1 col-md-5 col-sm-6">
 							<div class="single-contact-box">
-								<div class="contact-form">
-									<form action="/update/{{d.id}}" method="post">{% csrf_token %}>
-										<div class="row">
-											<div class="col-sm-6 col-xs-12">
-												<div class="form-group">
-												  <input type="text" class="form-control" id="name" placeholder="Name*" name="name" value="{{d.name}}" required>
-												</div><!--/.form-group-->
-											</div><!--/.col-->
-											<div class="col-sm-6 col-xs-12">
-												<div class="form-group">
-													<input type="email" class="form-control" id="email" placeholder="Email*" name="email" value="{{d.email}}" required>
-												</div><!--/.form-group-->
-											</div><!--/.col-->
-										</div><!--/.row-->
-										<div class="row">
-											<div class="col-sm-12">
-												<div class="form-group">
-													<input type="text" class="form-control" id="subject" placeholder="Subject" name="subject" value="{{d.subject}}" required>
-												</div><!--/.form-group-->
-											</div><!--/.col-->
-										</div><!--/.row-->
-										<div class="row">
-											<div class="col-sm-12">
-												<div class="form-group">
-													<textarea class="form-control" rows="8" id="comment" placeholder="Message" ></textarea>
-												</div><!--/.form-group-->
-											</div><!--/.col-->
-										</div><!--/.row-->
-										<div class="row">
-											<div class="col-sm-12">
-												<div class="single-contact-btn">
-                                                    <input type="button" class="btn-danger" value="Submit">
-												</div><!--/.single-single-contact-btn-->
-											</div><!--/.col-->
-										</div><!--/.row-->
-									</form><!--/form-->
-								</div><!--/.contact-form-->
-							</div><!--/.single-contact-box-->
-						</div><!--/.col-->
-						<div class="col-md-offset-1 col-md-5 col-sm-6">
-							<div class="single-contact-box">
 								<div class="contact-adress">
 									<div class="contact-add-head">
 										<h3>Myportfolio</h3>
@@ -932,40 +855,7 @@
 		
 		<!-- Include all js compiled plugins (below), or include individual files as needed -->
 
-		<script src="{% static 'js/jquery.js' %}"></script>
-        
-        <!--modernizr.min.js-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-		
-		<!--bootstrap.min.js-->
-        <script src="{% static 'js/bootstrap.min.js' %}"></script>
-		
-		<!-- bootsnav js -->
-		<script src="{% static 'js/bootsnav.js' %}"></script>
-		
-		<!-- jquery.sticky.js -->
-		<script src="{% static 'js/jquery.sticky.js' %}"></script>
-		
-		<!-- for progress bar start-->
 
-		<!-- progressbar js -->
-		<script src="{% static 'js/progressbar.js' %}"></script>
-
-		<!-- appear js -->
-		<script src="{% static 'js/jquery.appear.js' %}"></script>
-
-		<!-- for progress bar end -->
-
-		<!--owl.carousel.js-->
-        <script src="{% static 'js/owl.carousel.min.js' %}"></script>
-
-
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-		
-        
-        <!--Custom JS-->
-        <script src="{% static 'js/custom.js' %}"></script>
-        
     </body>
 {% endblock %}
 	
